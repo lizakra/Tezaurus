@@ -9,30 +9,42 @@
 @font-face {font-family: "PragmaticaWINCTT";
 src: url( "/fonts/PRG55__W.woff") format( "woff");
 }
+@font-face {font-family: "PragmaticaWINCTTBold";
+src: url( "/fonts/PRG55__W.woff") format( "woff");
+}
+@font-face {font-family: "Styrene-A-Black";
+src: url( "/fonts/Styrene-A-Black-Desktop.woff") format( "woff");
+}
+@font-face {font-family: "Styrene-A-Black";
+src: url( "/fonts/Styrene-A-Black-Desktop.woff") format( "woff");
+}
 
 body {
-        background-color: #f1f1f1);
-
+        background-color: #f1f1f1;
+        margin-left: 30px;
+        margin-right: 30px;
       }
-h1 h2 p {
-  font-family: "PragmaticaWINCTT"
-}
+
 
 h1 {
   margin-top: 70px;
   font-size: 36px;
-
-
+  font-family: "PragmaticaWINCTTBold";
 }
 
 h2 {
-  font-size: 18px;
+font-size: 18px;
 margin top: 30px;
-
 text-align: center;
+font-family: "PragmaticaWINCTTBold";
 
 }
-p { font-size: 14px;}
+p
+{ font-size: 14px;
+font-family: "PragmaticaWINCTT";}
+
+
+
 .mainscreen {
   background: url("images/hat.png") no-repeat center;
   height: 852px;
@@ -40,8 +52,9 @@ p { font-size: 14px;}
 
 .menubar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 181px;
+  font-family: "PragmaticaWINCTT";
 }
 
 .menubar img {
@@ -52,6 +65,7 @@ p { font-size: 14px;}
 .menubar_menu {
 position: relative;
 align-items: center;
+margin-top: 20px;
 }
 
 .menubar a {
@@ -65,27 +79,47 @@ text-decoration: none;
   margin top: 137px;
 }
 .cheeps {
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
-align-content: center;
+}
+
+.cheeps-a {
+width: 319px;
+height: 59px;
+position: relative;
+padding-top: 15px;
 margin-top: 10px;
 display: inline-block;
 background: white;
-border: 1px solid black;
-color: black;
+box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .1);
 border-radius: 50px;
-padding: 0 40px;
-font-size: 24px;
+font-size: 18px;
 line-height: 2.5;
+text-align: center;
 cursor: pointer;
+font-family: "PragmaticaWINCTT";
+
+}
+
+.cheeps-a :hover {
+background: orange;
+  transition: all .2s;
 }
 
 .teachers {
-    position: relative;
+  position: relative;
   margin-top: 70px;
   margin-bottom: 70px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  font-family: "PragmaticaWINCTT";
+}
+.teachers h1 {
+  font-family: "PragmaticaWINCTTBold";
 }
 
 .teacher_round {
@@ -94,8 +128,8 @@ cursor: pointer;
   height: 212px;
   border-radius: 106px;
 
+}
 
-    }
     .teacher_round img {
   object-fit: cover;}
 
@@ -105,12 +139,12 @@ cursor: pointer;
   .teacher_square img {
   object-fit: cover;}
 
-  .teacher_diamond {
+  /* .teacher_diamond {
     margin-top: 30px;
     width: 170px;
     height: 170px;
   transform: rotate(-45deg);
-  }
+  } */
   .teacher_square {
     width: 212px;
     height: 212px;
@@ -133,7 +167,7 @@ cursor: pointer;
   position: relative;
   margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .goals_card {
@@ -141,6 +175,7 @@ cursor: pointer;
     width: 212px;
     height: 500px;
     align-items: center;
+    font-family: "PragmaticaWINCTT";
 
 
 }
@@ -150,60 +185,114 @@ cursor: pointer;
   height: 314px;
 
 }
-.goals_card h2{
+
+.goals_card h2 {
   margin-top: 30px;
 }
-.process{
-background-color: #99C2DD;
-height: 648px;
-position: relative;
+
+
+.process {
+  background-color: #99C2DD;
+  margin-left: -30px;
+  margin-right: -30px;
+  height: 450px;
+  position: relative;
+padding-top: 15px;
+
 }
+
+.process_cards {
+margin-left: 30px;
+margin-right: 30px;
+padding-top: 60px;
+position: relative;
+display: flex;
+justify-content: space-between;
+font-family: "PragmaticaWINCTT";
+margin-left: 50px;
+margin-right: 50px;
+}
+.zag
+{ margin-left: 30px;
+  margin-top: 30px;
+  font-family: "PragmaticaWINCTT";
+  font-size: 36px;
+
+}
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+}
+
+.footer-text {
+  position: relative;
+  width: 547px;
+  height: 100px;
+  font-family: "PragmaticaWINCTT";
+  font-size: 14px;
+  padding-left: 30px;
+}
+.footer-icons{
+  position: relative;
+display: inline-block;
+padding-left: 30px;
+}
+
 
 
 </style>
   </head>
+
   <body>
 
-
   <div class="mainscreen">
+
     <div class="menubar">
-    <a href="index.html"><img src="images/logo.png" alt=""></a>
+
+    <div><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+
 <div class="menubar_menu">
-  <a href="#">Усителя</a>
+  <a href="#">Учителя</a>
   <a href="#">Программы</a>
   <a href="#">Цены</a>
   </div>
-  <a href="#">Войти</a>
+
+
+  <div class="menubar_menu"><a href="#">Войти</a></div>
+
   </div>
 
 </div>
 
-<div >
+<div class="cheeps">
 
-<a class="cheeps">Русский для детей и подростков</a>
-<a class="cheeps">Базовый русский</a>
-<a class="cheeps">Бизнесс русский</a>
-<a class="cheeps">Продвинутый русский</a><br>
-<a class="cheeps">Русский для начинающих</a>
-<a class="cheeps">Русский для сдачи ТОРФЛ</a>
-<a class="cheeps">Разговорный русский</a>
-<a class="cheeps">Письменный русский</a>
+<a class="cheeps-a">Русский для детей и подростков</a>
+<a class="cheeps-a">Базовый русский</a>
+<a class="cheeps-a">Бизнесс русский</a>
+<a class="cheeps-a">Продвинутый русский</a></div>
+<a class="cheeps-a">Русский для начинающих</a>
+<a class="cheeps-a">Русский для сдачи ТОРФЛ</a>
+<a class="cheeps-a">Разговорный русский</a>
+<a class="cheeps-a">Письменный русский</a>
 </div>
 
 <h1>Подберем учителя, с которым комфортно и интересно</h1>
 
 
 <div class="teachers">
+
   <img src="images/arrow.png" alt="" class="arrow">
 <div class="teachers">
   <div class="teacher_round">
-  <img src="images/teacher1.jpg" alt="" class="teacher_round">
+<img src="images/teacher1.jpg" alt="" class="teacher_round">
    <h2> Анна<br>Иванова</h2>
 </div>
 <div>
-  <img src="images/teacher1.jpg" alt="" class="teacher_diamond">
-   <h2> Анна<br>Иванова</h2>
-</div>
+  <img src="images/teacher1.jpg" alt="" class="teacher_square">
+   <h2> Анна<br>Иванова</h2></div>
 <div class="teacher_round">
 <img src="images/teacher1.jpg" alt="" class="teacher_round">
  <h2> Анна<br>Иванова</h2>
@@ -216,6 +305,8 @@ position: relative;
   <img src="images/arrow.png" alt="" class="arrow1">
 </div>
 </div>
+
+
 <h1>Подстроим программу под ваш запрос</h1>
 
 
@@ -238,12 +329,52 @@ position: relative;
   <div class="goals_card"><img src="images/Img6.png" alt=""><h2>Читать русскую литературу на языке оригинала</h2>
   </div>
 </div>
+
+
+
 <div class="process">
-  <div class=""><img src="images/Icon1.png" alt=""><h2>ЧЗаявка</h2><br><p>Вы подаете заявку</p>
-  </div>
+
+<div class="zag"> Как организована учеба </div>
+
+<div class="process_cards">
+
+  <div class=""><img src="images/Icon1.png" alt=""><h2>Заявка</h2><br><p>Вы подаете заявку</p>
   </div>
 
+  <div class=""><img src="images/Icon2.png" alt=""><h2>Заявка</h2><br><p>Вы подаете заявку</p>
+  </div>
 
+  <div class=""><img src="images/Icon3.png" alt=""><h2>Заявка</h2><br><p>Вы подаете заявку</p>
+  </div>
+
+  <div class=""><img src="images/Icon4.png" alt=""><h2>Заявка</h2><br><p>Вы подаете заявку</p>
+  </div>
+
+  </div>
+
+  </div>
+
+  <div ><img src="images/logos_podval.png" alt=""></div>
+
+  <div class="footer">
+
+
+  <div class="footer-text">
+    Мы всегда готовы помочь. Если есть вопросы или сомнения, свяжитесь с нами — мы вместе найдём подходящий вам курс. Оставьте свой номер номер и мы перезвоним или выберете любой другой удобный для вас способ связи</div>
+
+<div class="footer-icons">
+  <img src="images/footer-icon1.png" alt="">
+  <img src="images/footer-icon2.png" alt="">
+<img src="images/footer-icon3.png" alt="">
+<img src="images/footer-icon4.png" alt="">
+  </div>
+
+  <div class="footer-text">+7 (495) 333-33-33<br>
+privet@tezaurus.ru<br>
+Москва, ул. Остоженка 41, 125009<br>
+OOO «Тезаурус»</div>
+
+  </div>
 
 
 

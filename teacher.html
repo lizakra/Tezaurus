@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+<style media="screen">
+
+@font-face {font-family: "PragmaticaWINCTT";
+src: url( "/fonts/PRG55__W.woff") format( "woff");
+}
+@font-face {font-family: "PragmaticaWINCTTBold";
+src: url( "/fonts/PRG55__W.woff") format( "woff");
+}
+@font-face {font-family: "Styrene-A-Black";
+src: url( "/fonts/Styrene-A-Black-Desktop.woff") format( "woff");
+}
+@font-face {font-family: "Styrene-A-Black";
+src: url( "/fonts/Styrene-A-Black-Desktop.woff") format( "woff");
+}
+
+body {
+        background-color: #f1f1f1;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+
+h1 {
+  margin-top: 70px;
+  font-size: 36px;
+  font-family: "PragmaticaWINCTTBold";
+}
+
+h2 {
+font-size: 18px;
+margin top: 30px;
+text-align: center;
+font-family: "PragmaticaWINCTTBold";
+
+}
+p
+{ font-size: 14px;
+font-family: "PragmaticaWINCTT";
+margin-top: 30pt;}
+
+
+
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  height: 181px;
+  font-family: "PragmaticaWINCTT";
+}
+
+.menubar img {
+  height: 123px;
+  width: 331px;
+}
+
+.menubar_menu {
+position: relative;
+align-items: center;
+margin-top: 20px;
+}
+
+.menubar a {
+padding: 0px 20px;
+height: 20px;
+text-decoration: none;
+
+}
+.top_card {
+  width: 887px;
+  height: 382px;
+  position: relative;
+  display:inline-block;
+  background: white;
+  box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .1);
+}
+
+.teacher_photo {
+
+  width: 212px;
+  height: 212px;
+  border-radius: 106px;
+  position:relative;
+display:inline-block;
+
+
+}
+.teacher_info {
+
+width: 212px;
+height: 212px;
+border-radius: 106px;
+width: 174px;
+height:162px;
+position:relative;
+display:inline-block;
+
+}
+.teacher_text {
+
+}
+.teacher_photo img
+{object-fit: cover;}
+
+  .teacher_name
+  {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "PragmaticaWINCTT";
+    font-size: 24px;
+  }
+
+.small_text {
+  font-family: "PragmaticaWINCTT";
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 150px;
+}
+.stars {
+display: inline;
+}
+
+.cheeps {
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.cheeps-a {
+width: 319px;
+height: 59px;
+position: relative;
+padding-top: 15px;
+margin-top: 10px;
+display: inline-block;
+background: white;
+box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .1);
+border-radius: 50px;
+font-size: 18px;
+line-height: 2.5;
+text-align: center;
+cursor: pointer;
+font-family: "PragmaticaWINCTT";
+
+}
+.infogr {
+width: 319px;
+height: 140px;
+padding-top: 50px;
+margin-top: 50px;
+position: relative;
+margin-top: 10px;
+display: inline-block;
+
+}
+.descript {
+  position: relative;
+  display: inline-block;
+  font-family: "PragmaticaWINCTT";
+    font-size: 14px;
+}
+.descript_center {
+  position: relative;
+  display: block;
+  font-family: "PragmaticaWINCTT";
+    font-size: 14px;
+    text-align: center;
+  padding-left: 30px;
+  padding-left: 30px;
+}
+.number {
+  position: relative;
+  display: block;
+  font-family: "PragmaticaWINCTT";
+  font-size: 48px;
+  text-align: center;
+}
+.review {
+  width: 100%;
+  height: 247px;
+  position:relative;
+  display: block;
+  background: white;
+  box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .1);
+}
+.review_line {
+  display: block;
+  position:relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.review_small_txt {
+  display: in
+  font-family: "PragmaticaWINCTT";
+  font-size: 14px;
+}
+.small_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+}
+
+.footer-text {
+  position: relative;
+  width: 547px;
+  height: 100px;
+  font-family: "PragmaticaWINCTT";
+  font-size: 14px;
+  padding-left: 30px;
+}
+.footer-icons{
+  position: relative;
+display: inline-block;
+padding-left: 30px;
+}
+
+
+
+</style>
+  </head>
+
+  <body>
+
+  <div class="mainscreen">
+
+    <div class="menubar">
+
+    <div><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+
+<div class="menubar_menu">
+  <a href="#">Учителя</a>
+  <a href="#">Программы</a>
+  <a href="#">Цены</a>
+  </div>
+
+  <div class="menubar_menu"><a href="#">Войти</a></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="top_card">
+
+<div class="teacher_photo">
+  <img src="images/teacher1.jpg" alt="" class="teacher_photo">
+</div>
+<div class="teacher_info">
+
+     <div class="teacher_name">  Анна<br>Иванова </div>
+     <div class="small_text"> средняя оценка</div>
+     <span class="stars">
+       <img src="images/star.png" alt="">
+       <img src="images/star.png" alt="">
+       <img src="images/star.png" alt="">
+       <img src="images/star.png" alt="">
+       <img src="images/star.png" alt="">
+     </span>
+
+</div>
+<div class="teacher_text">
+Учу говорить по-русски
+с любым исходным словарным запасом,
+не теряться, если забылось слово или речевой оборот
+</div>
+
+</div>
+<p>Программы Анны</p>
+
+<div class="cheeps">
+
+<a class="cheeps-a">Русский для детей и подростков</a>
+<a class="cheeps-a">Базовый русский</a>
+<a class="cheeps-a">Бизнесс русский</a>
+
+</div>
+<div class="infogr">
+  <span class="descript">понятно</span>
+  <span class="stars">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+  </span><br>
+  <span class="stars">
+    <span class="descript">понятно</span>
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+  </span><br>
+  <span class="stars">
+    <span class="descript">понятно</span>
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+    <img src="images/star.png" alt="">
+  </span>
+
+</div>
+<div class="infogr">
+  <div class="number">
+    234
+  </div>
+  <div class="descript_center">Студентов сдали<br>ТОРФЛ более,<br>чем на 70 баллов
+
+  </div>
+</div>
+
+
+
+<div class="infogr">
+
+    <div class="number">
+      234
+    </div>
+    <div class="descript_center">Студентов сдали<br>ТОРФЛ более,<br>чем на 70 баллов
+
+    </div>
+</div>
+<div class="infogr">
+  <div class="number">
+    234
+  </div>
+  <div class="descript_center">Студентов сдали<br>ТОРФЛ более,<br>чем на 70 баллов
+
+  </div>
+</div>
+
+<div class="review">
+<div class="review_line">
+<div class="review_small_txt">20 сентября 2019</div>
+<div class="review_small_txt"><span class="small_info">Студент: Йосеф Шульц</span><span>Курс: Базовый русский</span></div>
+</div>
+
+<div class="review_line">
+
+
+  <div class="small_text"> средняя оценка</div>
+<span class="stars">
+  <img src="images/star.png" alt="">
+  <img src="images/star.png" alt="">
+  <img src="images/star.png" alt="">
+  <img src="images/star.png" alt="">
+  <img src="images/star.png" alt="">
+</span>
+</div>
+
+
+</div>
+
+
+  <div><img src="images/logos_podval.png" alt=""></div>
+
+
+
+  <div class="footer">
+
+
+  <div class="footer-text">
+    Мы всегда готовы помочь. Если есть вопросы или сомнения, свяжитесь с нами — мы вместе найдём подходящий вам курс. Оставьте свой номер номер и мы перезвоним или выберете любой другой удобный для вас способ связи</div>
+
+<div class="footer-icons">
+  <img src="images/footer-icon1.png" alt="">
+  <img src="images/footer-icon2.png" alt="">
+<img src="images/footer-icon3.png" alt="">
+<img src="images/footer-icon4.png" alt="">
+  </div>
+
+
+  <div class="footer-text">+7 (495) 333-33-33<br>
+privet@tezaurus.ru<br>
+Москва, ул. Остоженка 41, 125009<br>
+OOO «Тезаурус»</div>
+
+  </div>
+
+
+
+</html>
